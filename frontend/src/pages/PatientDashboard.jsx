@@ -1,9 +1,16 @@
+import LogoutButton from "../components/LogoutButton";
+
 export default function PatientDashboard() {
   return (
     <div className="p-10 bg-gray-100 min-h-screen">
-      <h1 className="text-3xl font-bold mb-8 text-green-700">
-        Patient Dashboard
-      </h1>
+
+      <div className="flex justify-between items-center mb-8">
+        <h1 className="text-3xl font-bold text-green-700">
+          Patient Dashboard
+        </h1>
+
+        <LogoutButton />
+      </div>
 
       <div className="grid grid-cols-3 gap-6">
         <Card title="📅 Book Appointment" />
