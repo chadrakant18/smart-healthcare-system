@@ -17,6 +17,7 @@ app.get("/health",(req,res)=>{
     });
 });
 
+app.use("/api/auth", authRoutes);
 
 const port=5000;
 
